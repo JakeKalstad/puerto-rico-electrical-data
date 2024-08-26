@@ -1,0 +1,20 @@
+[package]
+name = "genera-pr"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow="*"
+reqwest = {version="*", features=["blocking"]}
+v8 = "*"
+tokio = { version = "*", features = ["rt-multi-thread", "macros"]}
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+sqlx = {version="*", features=["sqlite", "runtime-tokio"]}
+rusqlite = "*"
+dotenv="*"
+chrono="*"
+chrono-tz="*"
